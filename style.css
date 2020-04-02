@@ -1,8 +1,11 @@
+/* Desktop */
+
 body {
     background-color: hsl(0, 0%, 98%);
     font-family: 'Poppins', sans-serif;
     color: hsl(229, 6%, 66%);
     font-size: 15px;
+    width: 100%;
 }
 
 h1 {
@@ -31,20 +34,20 @@ p {
     color: hsl(234, 12%, 34%);
     font-weight: 200;
     font-size: 1rem;
-    margin: 30px 0 0;
-    padding: 0 40px;
+    margin: 1.5rem 0;
+    padding: 0 1.5rem;
+    line-height: 1.5;
 }
 
 .first-container {
     width: 40%;
-    height: 200px;
+    height: auto;
     margin: 0 auto;
-    padding: 50px 0 30px 0;
+    padding: 3rem 0 2rem 0;
     text-align: center;
 }
 
 .second-container {
-    height: 550px;
     position: relative;
 }
 
@@ -83,6 +86,7 @@ p {
     left: 50%;
     margin-left: -175px;
     top: 280px;
+    margin-bottom: 1rem;
 }
 
 .box3 {
@@ -107,4 +111,69 @@ p {
     left: 50%;
     margin-left: 205px;
     top: 140px;
+}
+
+/* Mobile */
+
+@media (max-width: 375px) {
+    .first-container {
+        width: 100%;
+        
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .second-container {
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 {
+        position: static;
+        width: 85%;
+        margin: 0;
+        margin: 1rem auto;
+        order: 2;
+    }
+
+    .box2 {
+        position: static;
+        width: 85%;
+        margin: 0;
+        margin: 1rem auto;
+        order: 3;
+    }
+
+    .box3 {
+        position: static;
+        width: 85%;
+        margin: 0;
+        margin: 1rem auto;
+        order: 1;
+    }
+
+    .box4 {
+        position: static;
+        width: 85%;
+        margin: 0;
+        margin: 1rem auto 2rem;
+        order: 4;
+    }
+
+    .pic {
+        position: inherit;
+        margin: 4rem 0 0 14rem;
+    }
+
+   
+
+    
 }
